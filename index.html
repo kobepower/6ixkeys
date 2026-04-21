@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6ix Keys – Mobile Locksmith | Vaughan & GTA</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;900&family=Barlow+Condensed:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #0a0a0a;
+    --gold: #D4A017;
+    --gold-light: #F5C842;
+    --blue: #1A6FD4;
+    --blue-light: #3D8EF0;
+    --blue-glow: rgba(26,111,212,0.25);
+    --white: #FAFAFA;
+    --grey: #1a1a1a;
+    --grey2: #2a2a2a;
+    --text-muted: #888;
+    --red: #C0392B;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Barlow', sans-serif;
+    background: var(--black);
+    color: var(--white);
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    background: rgba(10,10,10,0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #222;
+  }
+
+  .nav-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: var(--blue-light);
+    text-decoration: none;
+  }
+
+  .nav-logo span { color: var(--white); }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--blue-light); }
+
+  .nav-cta {
+    background: var(--blue) !important;
+    color: var(--white) !important;
+    padding: 10px 24px !important;
+    border-radius: 4px;
+    font-weight: 900 !important;
+  }
+
+  .nav-cta:hover { background: var(--blue-light) !important; }
+
+  .nav-phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: var(--white);
+    position: relative;
+    animation: phonePulse 2.8s ease-in-out infinite;
+  }
+
+  .nav-phone .phone-icon {
+    font-size: 16px;
+    animation: iconBounce 2.8s ease-in-out infinite;
+  }
+
+  .nav-phone .phone-num {
+    background: linear-gradient(90deg, #fff 0%, var(--blue-light) 40%, #fff 70%, var(--gold-light) 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 2.8s ease-in-out infinite;
+  }
+
+  @keyframes phonePulse {
+    0%   { text-shadow: 0 0 6px rgba(61,142,240,0.3), 0 0 12px rgba(61,142,240,0.1); opacity: 1; }
+    40%  { text-shadow: 0 0 14px rgba(61,142,240,0.9), 0 0 28px rgba(61,142,240,0.5), 0 0 48px rgba(61,142,240,0.2); opacity: 1; }
+    60%  { text-shadow: 0 0 14px rgba(61,142,240,0.9), 0 0 28px rgba(61,142,240,0.5), 0 0 48px rgba(61,142,240,0.2); opacity: 1; }
+    85%  { text-shadow: 0 0 4px rgba(61,142,240,0.2); opacity: 0.55; }
+    100% { text-shadow: 0 0 6px rgba(61,142,240,0.3), 0 0 12px rgba(61,142,240,0.1); opacity: 1; }
+  }
+
+  @keyframes shimmer {
+    0%   { background-position: 200% center; }
+    50%  { background-position: 0% center; }
+    100% { background-position: 200% center; }
+  }
+
+  @keyframes iconBounce {
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    35%       { transform: scale(1.3) rotate(-12deg); }
+    55%       { transform: scale(1.3) rotate(12deg); }
+    70%       { transform: scale(1) rotate(0deg); }
+  }
+
+  .nav-phone:hover {
+    animation: none;
+    opacity: 1;
+    text-shadow: 0 0 20px rgba(61,142,240,1), 0 0 40px rgba(61,142,240,0.6);
+  }
+
+  .nav-phone:hover .phone-num {
+    animation: none;
+    background-position: 0% center;
+  }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 40px 80px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+      radial-gradient(ellipse at 70% 50%, rgba(26,111,212,0.14) 0%, transparent 60%),
+      radial-gradient(ellipse at 20% 80%, rgba(26,111,212,0.07) 0%, transparent 50%);
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(26,111,212,0.15);
+    border: 1px solid rgba(26,111,212,0.4);
+    color: var(--blue-light);
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    width: fit-content;
+    animation: fadeUp 0.6s ease both;
+  }
+
+  .hero-badge::before {
+    content: '●';
+    font-size: 8px;
+    animation: pulse 1.5s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  .hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(64px, 10vw, 130px);
+    line-height: 0.92;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    animation: fadeUp 0.6s 0.1s ease both;
+  }
+
+  .hero h1 .gold { color: var(--blue-light); }
+  .hero h1 .outline {
+    -webkit-text-stroke: 2px var(--white);
+    color: transparent;
+  }
+
+  .hero-sub {
+    font-size: clamp(18px, 2.5vw, 24px);
+    color: #bbb;
+    max-width: 580px;
+    line-height: 1.5;
+    margin-bottom: 48px;
+    font-weight: 500;
+    animation: fadeUp 0.6s 0.2s ease both;
+  }
+
+  .hero-sub strong { color: var(--white); }
+
+  .hero-ctas {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    animation: fadeUp 0.6s 0.3s ease both;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--blue);
+    color: var(--white);
+    padding: 18px 36px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    text-decoration: none;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-primary:hover {
+    background: var(--blue-light);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px var(--blue-glow);
+  }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    color: var(--white);
+    padding: 18px 36px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 2px solid #444;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--blue-light);
+    color: var(--blue-light);
+    transform: translateY(-2px);
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 48px;
+    margin-top: 64px;
+    padding-top: 48px;
+    border-top: 1px solid #222;
+    animation: fadeUp 0.6s 0.4s ease both;
+    flex-wrap: wrap;
+  }
+
+  .stat-item { }
+  .stat-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 42px;
+    color: var(--blue-light);
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 13px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4px;
+  }
+
+  /* BIG URGENCY BANNER */
+  .urgency-bar {
+    background: var(--red);
+    padding: 16px 40px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .urgency-bar a {
+    color: var(--white);
+    text-decoration: underline;
+    font-weight: 900;
+  }
+
+  /* WHY SECTION */
+  .why-section {
+    padding: 100px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-tag {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--blue-light);
+    margin-bottom: 16px;
+  }
+
+  .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(40px, 6vw, 72px);
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2px;
+    margin-top: 60px;
+    background: #222;
+  }
+
+  .why-card {
+    background: var(--grey);
+    padding: 40px 36px;
+    transition: background 0.2s;
+  }
+
+  .why-card:hover { background: #222; }
+
+  .why-icon {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .why-card h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: var(--white);
+  }
+
+  .why-card p {
+    color: #999;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* PEACE OF MIND SECTION */
+  .pom-section {
+    background: var(--grey);
+    padding: 100px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .pom-section::before {
+    content: 'SPARE KEY';
+    position: absolute;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 220px;
+    color: rgba(255,255,255,0.02);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  .pom-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+
+  .pom-section .section-title {
+    font-size: clamp(44px, 7vw, 88px);
+    margin-bottom: 24px;
+  }
+
+  .pom-highlight {
+    color: var(--blue-light);
+  }
+
+  .pom-section p {
+    font-size: 20px;
+    color: #aaa;
+    line-height: 1.7;
+    max-width: 680px;
+    margin: 0 auto 48px;
+  }
+
+  .scenario-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 60px;
+    text-align: left;
+  }
+
+  .scenario {
+    background: var(--black);
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 28px 24px;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+
+  .scenario:hover {
+    border-color: var(--blue-light);
+    transform: translateY(-4px);
+  }
+
+  .scenario-emoji { font-size: 28px; margin-bottom: 12px; }
+  .scenario h4 {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .scenario p { font-size: 14px; color: #777; line-height: 1.5; }
+
+  /* PROCESS */
+  .process-section {
+    padding: 100px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+    position: relative;
+  }
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .step-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 64px;
+    color: rgba(26,111,212,0.2);
+    line-height: 1;
+  }
+
+  .step h3 {
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .step p { font-size: 15px; color: #888; line-height: 1.6; }
+
+  /* CTA SECTION */
+  .cta-section {
+    background: var(--blue);
+    padding: 80px 40px;
+    text-align: center;
+  }
+
+  .cta-section h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(48px, 8vw, 96px);
+    color: var(--white);
+    line-height: 0.95;
+    margin-bottom: 16px;
+  }
+
+  .cta-section p {
+    font-size: 18px;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn-dark {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--black);
+    color: var(--white);
+    padding: 18px 36px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+
+  .btn-dark:hover {
+    background: #222;
+    transform: translateY(-2px);
+  }
+
+  /* ===== SERVICES PAGE ===== */
+  #services {
+    padding-top: 100px;
+  }
+
+  .services-hero {
+    padding: 80px 40px 60px;
+    border-bottom: 1px solid #222;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .services-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 2px;
+    background: #1a1a1a;
+  }
+
+  .service-card {
+    background: var(--black);
+    padding: 44px 36px;
+    transition: background 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .service-card:hover { background: var(--grey); }
+
+  .service-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0; height: 3px;
+    background: var(--blue-light);
+    transition: width 0.3s ease;
+  }
+
+  .service-card:hover::after { width: 100%; }
+
+  .service-price {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .service-price-note {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  .service-card h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 26px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+
+  .service-card p {
+    font-size: 15px;
+    color: #888;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+
+  .service-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+
+  .tag {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    color: #aaa;
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 100px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  .service-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--blue-light);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: gap 0.2s;
+  }
+
+  .service-cta:hover { gap: 14px; }
+
+  /* STICKY PHONE BAR */
+  .sticky-call {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 998;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-end;
+  }
+
+  .sticky-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    border-radius: 100px;
+    font-weight: 900;
+    font-size: 15px;
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+    white-space: nowrap;
+  }
+
+  .sticky-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+  }
+
+  .sticky-call-btn {
+    background: var(--blue);
+    color: var(--white);
+  }
+
+  .sticky-text-btn {
+    background: var(--grey2);
+    color: var(--white);
+    border: 1px solid #333;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #050505;
+    padding: 60px 40px 40px;
+    border-top: 1px solid #1a1a1a;
+  }
+
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+  }
+
+  .footer-brand .nav-logo {
+    font-size: 36px;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .footer-brand p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 260px;
+  }
+
+  .footer-col h4 {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+  }
+
+  .footer-col p, .footer-col a {
+    font-size: 15px;
+    color: #aaa;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.2s;
+  }
+
+  .footer-col a:hover { color: var(--blue-light); }
+
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #444;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .footer-bottom a { color: var(--blue-light); text-decoration: none; }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* MOBILE */
+  @media (max-width: 768px) {
+    nav { padding: 14px 20px; }
+    .nav-links { display: none; }
+    .hero { padding: 100px 20px 60px; }
+    .hero-stats { gap: 24px; }
+    .why-section, .process-section { padding: 60px 20px; }
+    .pom-section { padding: 60px 20px; }
+    .cta-section { padding: 60px 20px; }
+    .services-hero { padding: 60px 20px 40px; }
+    .services-grid { padding: 40px 20px; }
+    footer { padding: 40px 20px; }
+    .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+    .sticky-call { bottom: 16px; right: 16px; }
+    .urgency-bar { padding: 12px 20px; font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- STICKY CALL BUTTONS -->
+<div class="sticky-call">
+  <a href="tel:2899463846" class="sticky-btn sticky-call-btn">📞 Call Now</a>
+  <a href="sms:2899463846" class="sticky-btn sticky-text-btn">💬 Text Us</a>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#home" class="nav-logo">6ix <span>Keys</span></a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="tel:2899463846" class="nav-cta">Call Now</a></li>
+    <li>
+      <a href="tel:2899463846" class="nav-phone">
+        <span class="phone-icon">📞</span>
+        <span class="phone-num">289-946-3846</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ===== HOME PAGE ===== -->
+<section id="home">
+
+  <!-- URGENCY BAR -->
+  <div class="urgency-bar">
+    ⚡ Don't wait until you're locked out. Get your spare key TODAY — <a href="tel:2899463846">Call or text: 289-946-3846</a>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-badge">Mobile Locksmith · Vaughan & GTA · Available Now</div>
+    <h1>
+      DON'T GET<br>
+      <span class="gold">CAUGHT</span><br>
+      <span class="outline">WITHOUT</span><br>
+      A KEY.
+    </h1>
+    <p class="hero-sub">
+      Most people wait until they're <strong>stranded</strong> to call a locksmith. A spare key today costs a fraction of an emergency call tomorrow. 
+      <strong>We come to you — same day.</strong>
+    </p>
+    <div class="hero-ctas">
+      <a href="tel:2899463846" class="btn-primary">📞 Call Now — 289-946-3846</a>
+      <a href="sms:2899463846" class="btn-secondary">💬 Text Us Instead</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">GTA</div>
+        <div class="stat-label">Mobile Coverage</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100+</div>
+        <div class="stat-label">Makes & Models</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">$99+</div>
+        <div class="stat-label">Starting Price</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">0</div>
+        <div class="stat-label">Hidden Fees</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PEACE OF MIND -->
+  <div class="pom-section">
+    <div class="pom-inner">
+      <div class="section-tag fade-up">The 6ix Keys Philosophy</div>
+      <h2 class="section-title fade-up">
+        WHY WAIT FOR YOUR <span class="pom-highlight">KEYS TO GET LOST?</span>
+      </h2>
+      <p class="fade-up">
+        A spare key is the cheapest insurance you'll ever buy. Get one cut and programmed before life forces your hand — because it's never a good time to be locked out in the rain.
+      </p>
+      <a href="tel:2899463846" class="btn-primary fade-up" style="margin: 0 auto; display: inline-flex;">📞 Get My Spare Key Today</a>
+
+      <div class="scenario-cards">
+        <div class="scenario fade-up">
+          <div class="scenario-emoji">🌧️</div>
+          <h4>Locked Out in the Rain</h4>
+          <p>It always happens at the worst time. A spare key in your home means you're never truly stuck.</p>
+        </div>
+        <div class="scenario fade-up">
+          <div class="scenario-emoji">👨‍👩‍👧</div>
+          <h4>Family Needs the Car</h4>
+          <p>Partner forgot their key? Kid needs a ride? A second key keeps everyone moving.</p>
+        </div>
+        <div class="scenario fade-up">
+          <div class="scenario-emoji">💸</div>
+          <h4>Emergency Costs More</h4>
+          <p>Calling a locksmith at midnight costs 2–3x more than booking a spare key in advance.</p>
+        </div>
+        <div class="scenario fade-up">
+          <div class="scenario-emoji">🔑</div>
+          <h4>Lost Keys = Lost Day</h4>
+          <p>Searching for keys costs you time. A spare waiting at home costs you nothing daily.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <div class="process-section">
+    <div class="section-tag fade-up">How It Works</div>
+    <h2 class="section-title fade-up">SIMPLE AS <span style="color:var(--blue-light)">3 STEPS</span></h2>
+    <div class="steps">
+      <div class="step fade-up">
+        <div class="step-num">01</div>
+        <h3>Call or Text</h3>
+        <p>Reach out at <strong style="color:var(--white)">289-946-3846</strong>. Tell us your car's year, make and model. We'll confirm the price on the spot.</p>
+      </div>
+      <div class="step fade-up">
+        <div class="step-num">02</div>
+        <h3>We Come to You</h3>
+        <p>No towing. No dealership wait. We pull up to your home, office or parking lot with everything needed.</p>
+      </div>
+      <div class="step fade-up">
+        <div class="step-num">03</div>
+        <h3>Drive Away Secure</h3>
+        <p>Cut, programmed and tested on-site. You're back in business — usually in under an hour.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHY US -->
+  <div class="why-section">
+    <div class="section-tag fade-up">Why 6ix Keys</div>
+    <h2 class="section-title fade-up">WE LOCK DOWN <span style="color:var(--blue-light)">THE 6</span></h2>
+    <div class="why-grid">
+      <div class="why-card fade-up">
+        <div class="why-icon">🚗</div>
+        <h3>We Come to You</h3>
+        <p>Fully mobile — wherever your car is, that's where we work. No dealership trip, no towing needed.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon">⚡</div>
+        <h3>Same-Day Service</h3>
+        <p>Call or text and we'll get to you fast. Most jobs done within hours of booking.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon">🔐</div>
+        <h3>Advanced Programming Tools</h3>
+        <p>Professional-grade equipment for smart keys, transponders, fobs — for 100+ makes and models.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon">💰</div>
+        <h3>Fair, Upfront Pricing</h3>
+        <p>No surprises. You'll know the cost before we start. Starting at $99 for basic smart keys.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTTOM CTA -->
+  <div class="cta-section">
+    <h2>STOP WAITING.<br>GET YOUR SPARE.</h2>
+    <p>One call. We come to you. Done. Don't let a lost key ruin your day.</p>
+    <div class="cta-buttons">
+      <a href="tel:2899463846" class="btn-dark">📞 Call 289-946-3846</a>
+      <a href="sms:2899463846" class="btn-dark">💬 Text Us Now</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- ===== SERVICES PAGE ===== -->
+<section id="services">
+  <div class="services-hero">
+    <div class="section-tag fade-up">What We Offer</div>
+    <h2 class="section-title fade-up">OUR <span style="color:var(--blue-light)">SERVICES</span></h2>
+    <p style="color:#888; font-size:17px; max-width:560px; line-height:1.6; margin-top:12px;" class="fade-up">
+      From basic transponder keys to advanced smart key programming for luxury vehicles. We come to you, anywhere in the GTA.
+    </p>
+  </div>
+
+  <div class="services-grid">
+
+    <div class="service-card fade-up">
+      <div class="service-price">$99+</div>
+      <div class="service-price-note">Starting price — varies by make/model</div>
+      <h3>Basic Smart Key</h3>
+      <p>Smart key programmed to your vehicle — no blade cutting required. Great for adding a spare remote for peace of mind.</p>
+      <div class="service-tags">
+        <span class="tag">Most Makes</span>
+        <span class="tag">No Cutting</span>
+        <span class="tag">Same Day</span>
+      </div>
+      <a href="tel:2899463846" class="service-cta">Get a Quote →</a>
+    </div>
+
+    <div class="service-card fade-up">
+      <div class="service-price">$149+</div>
+      <div class="service-price-note">Starting price — OEM or aftermarket</div>
+      <h3>Smart Key + Blade Cut</h3>
+      <p>Full smart key programmed AND emergency blade cut on-site. The complete solution — drive away with a fully functional spare.</p>
+      <div class="service-tags">
+        <span class="tag">Cut On-Site</span>
+        <span class="tag">Programmed</span>
+        <span class="tag">Most Models</span>
+      </div>
+      <a href="tel:2899463846" class="service-cta">Get a Quote →</a>
+    </div>
+
+    <div class="service-card fade-up">
+      <div class="service-price">$250+</div>
+      <div class="service-price-note">Premium service — BMW, Audi, Mercedes</div>
+      <h3>Advanced / Luxury Vehicles</h3>
+      <p>Specialized programming for European makes including BMW, Mercedes-Benz, and Audi. Advanced tools, precise work — done right.</p>
+      <div class="service-tags">
+        <span class="tag">BMW</span>
+        <span class="tag">Mercedes</span>
+        <span class="tag">Audi</span>
+        <span class="tag">Advanced Tools</span>
+      </div>
+      <a href="tel:2899463846" class="service-cta">Get a Quote →</a>
+    </div>
+
+    <div class="service-card fade-up">
+      <div class="service-price">Call</div>
+      <div class="service-price-note">For a custom quote</div>
+      <h3>All Keys Lost (AKL)</h3>
+      <p>Lost every key to your vehicle? We can program new keys from scratch — no working key required on most vehicles.</p>
+      <div class="service-tags">
+        <span class="tag">No Working Key Needed</span>
+        <span class="tag">Most Makes</span>
+      </div>
+      <a href="tel:2899463846" class="service-cta">Call for Pricing →</a>
+    </div>
+
+    <div class="service-card fade-up">
+      <div class="service-price">$99+</div>
+      <div class="service-price-note">Transponder programming</div>
+      <h3>Transponder / Chip Key</h3>
+      <p>Traditional transponder key cut and programmed. Works with older and newer vehicles that require a chip key to start.</p>
+      <div class="service-tags">
+        <span class="tag">Chip Programming</span>
+        <span class="tag">Blade Cut</span>
+        <span class="tag">Wide Compatibility</span>
+      </div>
+      <a href="tel:2899463846" class="service-cta">Get a Quote →</a>
+    </div>
+
+    <div class="service-card fade-up" style="background: #0d0d0d; border: 1px solid rgba(26,111,212,0.35);">
+      <div style="font-size:40px; margin-bottom:20px;">🔑</div>
+      <h3 style="color:var(--blue-light); margin-bottom:16px;">Not Sure What You Need?</h3>
+      <p style="color:#888; margin-bottom:28px;">Tell us your year, make and model — we'll tell you exactly what's needed and the price. No guessing, no surprises.</p>
+      <a href="tel:2899463846" class="btn-primary" style="font-size:15px; padding:14px 28px;">📞 Call 289-946-3846</a>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM CTA repeat -->
+  <div class="cta-section">
+    <h2>READY TO GET<br>YOUR SPARE?</h2>
+    <p>Call or text. We'll come to you — same day service across the GTA.</p>
+    <div class="cta-buttons">
+      <a href="tel:2899463846" class="btn-dark">📞 289-946-3846</a>
+      <a href="sms:2899463846" class="btn-dark">💬 Text Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#home" class="nav-logo">6ix <span>Keys</span></a>
+      <p>Mobile automotive locksmith serving Vaughan, Woodbridge, and the Greater Toronto Area. Mamba Mentality — for your security.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="tel:2899463846">Call Us</a>
+      <a href="sms:2899463846">Text Us</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:2899463846">289-946-3846</a>
+      <a href="mailto:kobee.b@gmail.com">kobee.b@gmail.com</a>
+      <p>Vaughan, ON</p>
+      <p>Near Vaughan Mills</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 6ix Keys. All rights reserved.</span>
+    <span>Built for the 6 — <a href="tel:2899463846">We Lock Down The 6.</a></span>
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
