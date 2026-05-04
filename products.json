@@ -1,23 +1,31 @@
 {
   "products": [
     {
-      "id": "bmw-bdc3-black-3btn",
-      "name": "BMW Smart Key — F/G Chassis (Black)",
+      "id": "bmw-bdc3-aftermarket-3btn",
+      "name": "2014-2024 BMW Smart Key F/G Chassis 3-Button",
       "brand": "BMW",
       "type": "Smart Keys",
-      "price": 180,
-      "image": "images/bmw-bdc3-black.jpg",
-      "description": "Aftermarket smart key for BMW BDC2 / BDC3 / BCP. 315MHz. Includes shell + PCB. Programming available — call to book.",
+      "fcc_id": "NBGIDGNG1",
+      "sku": "SK-BMW-BDC3-3",
+      "tier": "Aftermarket",
+      "price": 220.00,
+      "sale_price": 180.00,
+      "image": "images/bmw-bcp-white.png",
+      "description": "Fits BMW BDC2 / BDC3 / BCP 315MHz. Includes shell + PCB. Programming available.",
       "stock": "in-stock",
-      "tags": ["BMW", "F-chassis", "G-chassis", "BDC3"]
+      "tags": ["BMW", "F-chassis", "G-chassis", "BDC3", "smart key"]
     },
     {
-      "id": "audi-fgb08-model-c",
-      "name": "Audi Smart Key — Model C (FGB08)",
+      "id": "audi-fgb08-c-3btn",
+      "name": "Audi Smart Key 3-Button (KEYDIY FGB08 Model C)",
       "brand": "Audi",
       "type": "Smart Keys",
+      "fcc_id": null,
+      "sku": "SK-AUDI-FGB08C",
+      "tier": "Aftermarket",
       "price": null,
-      "image": "images/audi-fgb08-c.jpg",
+      "sale_price": null,
+      "image": "images/audi-fgb08-c-3btn.png",
       "description": "KEYDIY FGB08 universal smart key for Audi. Works with KD-X4 / KD-MAX. Call for current pricing — depends on chip + frequency.",
       "stock": "in-stock",
       "tags": ["Audi", "KEYDIY", "FGB08"]
