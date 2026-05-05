@@ -247,6 +247,22 @@
       "tags": ["BMW", "case", "chrome", "metal"]
     },
     {
+      "id": "case-bmw-color-options",
+      "name": "BMW Smart Key Case — Available in 20+ Colors & Finishes",
+      "brand": "BMW",
+      "type": "Cases & Covers",
+      "fcc_id": null,
+      "sku": "CASE-BMW-MULTI",
+      "tier": "Aftermarket",
+      "price": 35.00,
+      "sale_price": null,
+      "image": "images/case-bmw-color-options.png",
+      "description": "Choose from 20+ color and finish options — chrome, matte black, blue M-Sport, white, carbon fiber and more. Pairs with leather or metal keychain. Call/text Kobe to confirm color availability when ordering.",
+      "stock": "in-stock",
+      "tags": ["BMW", "case", "multi-color", "chrome", "M Sport", "carbon fiber"]
+    },
+
+    {
       "id": "case-bmw-brushed-metal",
       "name": "BMW Brushed Metal Key Case",
       "brand": "BMW",
