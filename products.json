@@ -1,6 +1,48 @@
 {
   "products": [
-
+    {
+      "id": "service-check-engine-scan",
+      "name": "Check Engine Light Diagnostic Scan",
+      "brand": "Universal",
+      "type": "Services",
+      "fcc_id": null,
+      "sku": "SVC-DIAG-50",
+      "tier": "Service",
+      "price": 50.0,
+      "sale_price": null,
+      "image": "images/service-check-engine-diagnostic.png",
+      "description": "Full OBD2 diagnostic scan. Pull all stored + pending trouble codes, explain what each means, identify likely root causes (sensor / mechanical / electrical). 15-30 min on-site at your location. Mobile service Vaughan / Woodbridge / GTA.",
+      "stock": "in-stock",
+      "tags": [
+        "diagnostic",
+        "OBD2",
+        "check engine",
+        "scan",
+        "service"
+      ]
+    },
+    {
+      "id": "service-bmw-audi-coding-single",
+      "name": "BMW / Audi Coding & Feature Unlock",
+      "brand": "BMW",
+      "type": "Services",
+      "fcc_id": null,
+      "sku": "SVC-CODE-100",
+      "tier": "Service",
+      "price": 100.0,
+      "sale_price": null,
+      "image": "images/service-bmw-audi-coding.png",
+      "description": "Unlock hidden features on your BMW or Audi via professional coding. One session, unlimited features. Examples: auto-fold mirrors, cornering fog lights, sport gauge cluster, lap timer (BMW M), comfort blinkers, disable seatbelt chime, video in motion, digital speed display, welcome lights, and more. Dealer-level results without the dealer price. Mobile service Vaughan / Woodbridge / GTA.",
+      "stock": "in-stock",
+      "tags": [
+        "BMW",
+        "Audi",
+        "coding",
+        "feature unlock",
+        "OBDeleven",
+        "service"
+      ]
+    },
     {
       "id": "bmw-bcp-white-3btn",
       "name": "BMW Smart Key — F/G Chassis BCP (White M-Stripe)",
@@ -14,7 +56,14 @@
       "image": "images/bmw-bcp-white.png",
       "description": "Aftermarket BMW BDC2 / BDC3 / BCP smart key. White shell with M-Sport stripe. 315MHz / 433MHz available. Programming via CGDI K2.",
       "stock": "in-stock",
-      "tags": ["BMW", "BCP", "BDC3", "F-chassis", "G-chassis", "M Sport"]
+      "tags": [
+        "BMW",
+        "BCP",
+        "BDC3",
+        "F-chassis",
+        "G-chassis",
+        "M Sport"
+      ]
     },
     {
       "id": "bmw-fchassis-4btn",
@@ -29,7 +78,11 @@
       "image": "images/bmw-fchassis-4btn.png",
       "description": "BMW F-chassis 4-button smart key (lock / unlock / trunk / panic). Silver shell. Includes shell + PCB.",
       "stock": "in-stock",
-      "tags": ["BMW", "F-chassis", "4-button"]
+      "tags": [
+        "BMW",
+        "F-chassis",
+        "4-button"
+      ]
     },
     {
       "id": "bmw-fchassis-3btn-pcb",
@@ -44,7 +97,11 @@
       "image": "images/bmw-fchassis-3btn-black-pcb.png",
       "description": "BMW F-chassis 3-button smart key. Black shell, original-style PCB. Programming available.",
       "stock": "in-stock",
-      "tags": ["BMW", "F-chassis", "3-button"]
+      "tags": [
+        "BMW",
+        "F-chassis",
+        "3-button"
+      ]
     },
     {
       "id": "bmw-gchassis-4btn",
@@ -59,7 +116,12 @@
       "image": "images/bmw-gchassis-4btn.png",
       "description": "BMW G-chassis 4-button smart key. NCF795xV / ID49 chip. 434MHz. FCC ID: N5F-ID21A.",
       "stock": "in-stock",
-      "tags": ["BMW", "G-chassis", "ID49", "434MHz"]
+      "tags": [
+        "BMW",
+        "G-chassis",
+        "ID49",
+        "434MHz"
+      ]
     },
     {
       "id": "bmw-bcp-pcb-315",
@@ -74,7 +136,13 @@
       "image": "images/bmw-bcp-pcb-315mhz.png",
       "description": "Original BMW BCP PCB only. 315MHz with UWB support. CA = UWB. For shell-swap or repair.",
       "stock": "in-stock",
-      "tags": ["BMW", "BCP", "PCB", "315MHz", "UWB"]
+      "tags": [
+        "BMW",
+        "BCP",
+        "PCB",
+        "315MHz",
+        "UWB"
+      ]
     },
     {
       "id": "bmw-bcp-pcb-433",
@@ -89,9 +157,14 @@
       "image": "images/bmw-bcp-pcb-433mhz.png",
       "description": "Original BMW BCP PCB only. 433.92MHz with UWB support. CA = UWB. European/EU spec.",
       "stock": "in-stock",
-      "tags": ["BMW", "BCP", "PCB", "433MHz", "UWB"]
+      "tags": [
+        "BMW",
+        "BCP",
+        "PCB",
+        "433MHz",
+        "UWB"
+      ]
     },
-
     {
       "id": "audi-fgb08-a-2btn",
       "name": "Audi Smart Key — KEYDIY FGB08 Model A (2-Button)",
@@ -105,7 +178,12 @@
       "image": "images/audi-fgb08-a-2btn.png",
       "description": "KEYDIY FGB08 Model A — 2-button universal Audi smart key. Works with KD-X4 / KD-MAX. Soldering adapter compatible.",
       "stock": "in-stock",
-      "tags": ["Audi", "KEYDIY", "FGB08", "2-button"]
+      "tags": [
+        "Audi",
+        "KEYDIY",
+        "FGB08",
+        "2-button"
+      ]
     },
     {
       "id": "audi-fgb08-b-3btn",
@@ -120,7 +198,12 @@
       "image": "images/audi-fgb08-b-3btn.png",
       "description": "KEYDIY FGB08 Model B — 3-button Audi smart key. Plain shell. Works with KD-X4 / KD-MAX.",
       "stock": "in-stock",
-      "tags": ["Audi", "KEYDIY", "FGB08", "3-button"]
+      "tags": [
+        "Audi",
+        "KEYDIY",
+        "FGB08",
+        "3-button"
+      ]
     },
     {
       "id": "audi-fgb08-c-3btn",
@@ -135,7 +218,12 @@
       "image": "images/audi-fgb08-c-3btn.png",
       "description": "KEYDIY FGB08 Model C — 3-button Audi smart key (lock / trunk / unlock). Works with KD-X4 / KD-MAX.",
       "stock": "in-stock",
-      "tags": ["Audi", "KEYDIY", "FGB08", "3-button"]
+      "tags": [
+        "Audi",
+        "KEYDIY",
+        "FGB08",
+        "3-button"
+      ]
     },
     {
       "id": "audi-fgb08-d-3btn",
@@ -150,9 +238,13 @@
       "image": "images/audi-fgb08-d-3btn.png",
       "description": "KEYDIY FGB08 Model D — 3-button Audi smart key with 2x button. Slim profile. Works with KD-X4 / KD-MAX.",
       "stock": "in-stock",
-      "tags": ["Audi", "KEYDIY", "FGB08", "3-button"]
+      "tags": [
+        "Audi",
+        "KEYDIY",
+        "FGB08",
+        "3-button"
+      ]
     },
-
     {
       "id": "vw-fgb25-5btn",
       "name": "VW Smart Key — KEYDIY FGB25-5 (5-Button)",
@@ -166,7 +258,12 @@
       "image": "images/vw-fgb25-5btn.png",
       "description": "KEYDIY FGB25-5 — 5-button VW smart key. Lock / unlock / trunk / 2x / panic. KD 5D program supported.",
       "stock": "in-stock",
-      "tags": ["VW", "Volkswagen", "KEYDIY", "FGB25-5"]
+      "tags": [
+        "VW",
+        "Volkswagen",
+        "KEYDIY",
+        "FGB25-5"
+      ]
     },
     {
       "id": "vw-fgb25-a-2btn",
@@ -181,7 +278,13 @@
       "image": "images/vw-fgb25-a-2btn.png",
       "description": "KEYDIY FGB25-5 Model A — 2-button VW smart key. Black gloss shell. Works with KD-X4 / KD-MAX.",
       "stock": "in-stock",
-      "tags": ["VW", "Volkswagen", "KEYDIY", "FGB25", "2-button"]
+      "tags": [
+        "VW",
+        "Volkswagen",
+        "KEYDIY",
+        "FGB25",
+        "2-button"
+      ]
     },
     {
       "id": "vw-fgb25-pcb-only",
@@ -196,9 +299,13 @@
       "image": "images/vw-fgb25-5-pcb.png",
       "description": "KEYDIY FGB25-5 PCB only. For shell swaps or repair work. KD 5D program compatible.",
       "stock": "in-stock",
-      "tags": ["VW", "Volkswagen", "KEYDIY", "PCB"]
+      "tags": [
+        "VW",
+        "Volkswagen",
+        "KEYDIY",
+        "PCB"
+      ]
     },
-
     {
       "id": "honda-smart-set",
       "name": "Honda Smart Key Set — Multi-Button (KR5TP-4)",
@@ -212,9 +319,12 @@
       "image": "images/honda-smart-set.png",
       "description": "Honda smart key collection. Multiple button configurations available (3 / 4 / 5 / 6 button). FCC ID: KR5TP-4. Specify model + year when ordering.",
       "stock": "in-stock",
-      "tags": ["Honda", "smart key", "KR5TP-4"]
+      "tags": [
+        "Honda",
+        "smart key",
+        "KR5TP-4"
+      ]
     },
-
     {
       "id": "lexus-smart-set",
       "name": "Lexus Smart Key Set — Multi-Button",
@@ -228,9 +338,11 @@
       "image": "images/lexus-smart-set.png",
       "description": "Lexus aftermarket smart key collection. 3 / 4 button options. Multiple Lexus models supported. Specify year + model.",
       "stock": "in-stock",
-      "tags": ["Lexus", "smart key"]
+      "tags": [
+        "Lexus",
+        "smart key"
+      ]
     },
-
     {
       "id": "case-bmw-metal-chrome",
       "name": "BMW Metal Chrome Key Case with Carabiner",
@@ -239,29 +351,18 @@
       "fcc_id": null,
       "sku": "CASE-BMW-CHROME",
       "tier": "Aftermarket",
-      "price": 30.00,
+      "price": 35.0,
       "sale_price": null,
       "image": "images/case-bmw-metal-chrome.png",
       "description": "Premium chrome metal case for BMW smart keys. Includes BMW logo emblem + carabiner clip. Hard-shell protection.",
       "stock": "in-stock",
-      "tags": ["BMW", "case", "chrome", "metal"]
+      "tags": [
+        "BMW",
+        "case",
+        "chrome",
+        "metal"
+      ]
     },
-    {
-      "id": "case-bmw-color-options",
-      "name": "BMW Smart Key Case — Available in 20+ Colors & Finishes",
-      "brand": "BMW",
-      "type": "Cases & Covers",
-      "fcc_id": null,
-      "sku": "CASE-BMW-MULTI",
-      "tier": "Aftermarket",
-      "price": 35.00,
-      "sale_price": null,
-      "image": "images/case-bmw-color-options.png",
-      "description": "Choose from 20+ color and finish options — chrome, matte black, blue M-Sport, white, carbon fiber and more. Pairs with leather or metal keychain. Call/text Kobe to confirm color availability when ordering.",
-      "stock": "in-stock",
-      "tags": ["BMW", "case", "multi-color", "chrome", "M Sport", "carbon fiber"]
-    },
-
     {
       "id": "case-bmw-brushed-metal",
       "name": "BMW Brushed Metal Key Case",
@@ -270,12 +371,16 @@
       "fcc_id": null,
       "sku": "CASE-BMW-BRUSH",
       "tier": "Aftermarket",
-      "price": 30.00,
+      "price": 35.0,
       "sale_price": null,
       "image": "images/case-bmw-brushed-metal.png",
       "description": "BMW brushed metal smart key case. Premium finish with hard-shell protection.",
       "stock": "in-stock",
-      "tags": ["BMW", "case", "brushed metal"]
+      "tags": [
+        "BMW",
+        "case",
+        "brushed metal"
+      ]
     },
     {
       "id": "case-honda-m-tpu-grey",
@@ -285,12 +390,16 @@
       "fcc_id": null,
       "sku": "CASE-HON-MTPU-G",
       "tier": "Aftermarket",
-      "price": 20.00,
+      "price": 20.0,
       "sale_price": null,
       "image": "images/case-honda-m-tpu-grey.png",
       "description": "Honda M-style grey/black TPU case. Slim profile, key-ring loop included. Lightweight, flexible protection.",
       "stock": "in-stock",
-      "tags": ["Honda", "TPU", "case"]
+      "tags": [
+        "Honda",
+        "TPU",
+        "case"
+      ]
     },
     {
       "id": "case-kia-m-tpu-redblack",
@@ -300,12 +409,16 @@
       "fcc_id": null,
       "sku": "CASE-KIA-MTPU-RB",
       "tier": "Aftermarket",
-      "price": 20.00,
+      "price": 20.0,
       "sale_price": null,
       "image": "images/case-kia-m-tpu-redblack.png",
       "description": "Kia M-style red and black TPU case. Lightweight, flexible protection with sport accent.",
       "stock": "in-stock",
-      "tags": ["Kia", "TPU", "case"]
+      "tags": [
+        "Kia",
+        "TPU",
+        "case"
+      ]
     },
     {
       "id": "case-honda-crv-leather",
@@ -315,12 +428,17 @@
       "fcc_id": null,
       "sku": "CASE-HON-CRV",
       "tier": "Aftermarket",
-      "price": 30.00,
+      "price": 35.0,
       "sale_price": null,
       "image": "images/case-honda-crv-leather-silver.png",
       "description": "Premium Honda CR-V key case. Leather wrap with bright silver metal frame. Includes leather strap and grey buckle.",
       "stock": "in-stock",
-      "tags": ["Honda", "CR-V", "case", "leather"]
+      "tags": [
+        "Honda",
+        "CR-V",
+        "case",
+        "leather"
+      ]
     },
     {
       "id": "case-toyota-carbon-set",
@@ -330,12 +448,17 @@
       "fcc_id": null,
       "sku": "CASE-TOY-CARBON",
       "tier": "Aftermarket",
-      "price": 30.00,
+      "price": 35.0,
       "sale_price": null,
       "image": "images/case-toyota-carbon-set.png",
       "description": "Toyota smart key case — full metal package with carbon fiber pattern. Anti-fall and wear-resistant. Toyota logo embossed.",
       "stock": "in-stock",
-      "tags": ["Toyota", "case", "carbon fiber", "metal"]
+      "tags": [
+        "Toyota",
+        "case",
+        "carbon fiber",
+        "metal"
+      ]
     },
     {
       "id": "case-dodge-srt-metal",
@@ -345,12 +468,18 @@
       "fcc_id": null,
       "sku": "CASE-DOD-SRT",
       "tier": "Aftermarket",
-      "price": 30.00,
+      "price": 35.0,
       "sale_price": null,
       "image": "images/case-dodge-srt-metal.png",
       "description": "Dodge SRT / Hellcat metal key case. Hellcat logo on rear. Fits 5-button Chrysler / Dodge / Jeep FOBIK keys.",
       "stock": "in-stock",
-      "tags": ["Dodge", "SRT", "Hellcat", "case", "FOBIK"]
+      "tags": [
+        "Dodge",
+        "SRT",
+        "Hellcat",
+        "case",
+        "FOBIK"
+      ]
     },
     {
       "id": "case-kia-metal-gunmetal",
@@ -360,13 +489,422 @@
       "fcc_id": null,
       "sku": "CASE-KIA-GUN",
       "tier": "Aftermarket",
-      "price": 30.00,
+      "price": 35.0,
       "sale_price": null,
       "image": "images/case-kia-metal-gunmetal.png",
       "description": "Kia matte gun-grey metal smart key case. Includes matching leather buckle keychain. KIA logo embossed.",
       "stock": "in-stock",
-      "tags": ["Kia", "case", "gunmetal", "metal"]
+      "tags": [
+        "Kia",
+        "case",
+        "gunmetal",
+        "metal"
+      ]
+    },
+    {
+      "id": "audi-2017-2024-oem",
+      "name": "Audi Smart Key 2017-2024",
+      "brand": "Audi",
+      "type": "Smart Keys",
+      "fcc_id": "IYZFBSB02",
+      "sku": "AUDI-17-24",
+      "tier": "OEM",
+      "price": 60.0,
+      "sale_price": null,
+      "image": "images/audi-keys-2017-2024.png",
+      "description": "Audi smart key 2017-2024. RF 433 MHz, MQB chip 1048, blade keyway HU66, includes mechanical backup key. OEM quality. Push start.",
+      "stock": "in-stock",
+      "tags": [
+        "Audi",
+        "smart key",
+        "OEM",
+        "433MHz",
+        "MQB",
+        "HU66"
+      ]
+    },
+    {
+      "id": "bmw-2017-2024-oem",
+      "name": "BMW Smart Key 2017-2024",
+      "brand": "BMW",
+      "type": "Smart Keys",
+      "fcc_id": "NBGIDGNG1",
+      "sku": "BMW-17-24",
+      "tier": "OEM",
+      "price": 60.0,
+      "sale_price": null,
+      "image": "images/bmw-keys-2017-2024.png",
+      "description": "BMW smart key 2017-2024. RF 315 MHz, chip ID49, blade keyway HU100R, push start, mechanical backup key included. OEM quality.",
+      "stock": "in-stock",
+      "tags": [
+        "BMW",
+        "smart key",
+        "OEM",
+        "315MHz",
+        "ID49",
+        "HU100R"
+      ]
+    },
+    {
+      "id": "chrysler-2017-2024-oem",
+      "name": "Chrysler Smart Key 2017-2024",
+      "brand": "Chrysler",
+      "type": "Smart Keys",
+      "fcc_id": "M3N-40821302",
+      "sku": "CHR-17-24",
+      "tier": "OEM",
+      "price": 60.0,
+      "sale_price": null,
+      "image": "images/chrysler-keys-2017-2024.png",
+      "description": "Chrysler smart key 2017-2024. RF 433 MHz, push start, mechanical backup key included. OEM quality.",
+      "stock": "in-stock",
+      "tags": [
+        "Chrysler",
+        "smart key",
+        "OEM",
+        "433MHz"
+      ]
+    },
+    {
+      "id": "ford-2017-2024-oem",
+      "name": "Ford Smart Key 2017-2024",
+      "brand": "Ford",
+      "type": "Smart Keys",
+      "fcc_id": "M3N-A2C931426",
+      "sku": "FORD-17-24",
+      "tier": "OEM",
+      "price": 60.0,
+      "sale_price": null,
+      "image": "images/ford-keys-2017-2024.png",
+      "description": "Ford smart key 2017-2024. RF 315 MHz, chip TEX, blade keyway HU101, push start, OEM quality.",
+      "stock": "in-stock",
+      "tags": [
+        "Ford",
+        "smart key",
+        "OEM",
+        "315MHz",
+        "HU101"
+      ]
+    },
+    {
+      "id": "gm-2017-2024-oem",
+      "name": "GM Smart Key 2017-2024",
+      "brand": "GM",
+      "type": "Smart Keys",
+      "fcc_id": "HYQ4AS",
+      "sku": "GM-17-24",
+      "tier": "OEM",
+      "price": 60.0,
+      "sale_price": null,
+      "image": "images/gm-keys-2017-2024.png",
+      "description": "GM smart key 2017-2024 (Chevrolet, GMC, Buick, Cadillac). RF 315 MHz, chip ID46, blade keyway B119, push start. OEM quality.",
+      "stock": "in-stock",
+      "tags": [
+        "GM",
+        "Chevrolet",
+        "GMC",
+        "smart key",
+        "OEM",
+        "315MHz",
+        "B119"
+      ]
+    },
+    {
+      "id": "honda-2017-2024-oem",
+      "name": "Honda Smart Key 2017-2024",
+      "brand": "Honda",
+      "type": "Smart Keys",
+      "fcc_id": "KR5V2X",
+      "sku": "HONDA-17-24",
+      "tier": "OEM",
+      "price": 60.0,
+      "sale_price": null,
+      "image": "images/honda-keys-2017-2024.png",
+      "description": "Honda smart key 2017-2024. RF 343.9 MHz, chip HG46, blade keyway HON66, push start, mechanical backup key included. OEM quality.",
+      "stock": "in-stock",
+      "tags": [
+        "Honda",
+        "smart key",
+        "OEM",
+        "343MHz",
+        "HON66"
+      ]
+    },
+    {
+      "id": "hyundai-2017-2024-oem",
+      "name": "Hyundai Smart Key 2017-2024",
+      "brand": "Hyundai",
+      "type": "Smart Keys",
+      "fcc_id": "TQ8-FOB-4F27",
+      "sku": "HYUN-17-24",
+      "tier": "OEM",
+      "price": 60.0,
+      "sale_price": null,
+      "image": "images/hyundai-keys-2017-2024.png",
+      "description": "Hyundai smart key 2017-2024. RF 433 MHz, chip ID46, blade keyway HY22, push start. OEM quality.",
+      "stock": "in-stock",
+      "tags": [
+        "Hyundai",
+        "smart key",
+        "OEM",
+        "433MHz",
+        "HY22"
+      ]
+    },
+    {
+      "id": "infiniti-2017-2024-oem",
+      "name": "Infiniti Smart Key 2017-2024",
+      "brand": "Infiniti",
+      "type": "Smart Keys",
+      "fcc_id": "KR5TXN7",
+      "sku": "INF-17-24",
+      "tier": "OEM",
+      "price": 60.0,
+      "sale_price": null,
+      "image": "images/infiniti-keys-2017-2024.png",
+      "description": "Infiniti smart key 2017-2024. RF 433 MHz, chip ID46, blade keyway NSN14, push start. OEM quality.",
+      "stock": "in-stock",
+      "tags": [
+        "Infiniti",
+        "smart key",
+        "OEM",
+        "433MHz",
+        "NSN14"
+      ]
+    },
+    {
+      "id": "jeep-2017-2024-oem",
+      "name": "Jeep Smart Key 2017-2024",
+      "brand": "Jeep",
+      "type": "Smart Keys",
+      "fcc_id": "M3N-40821302",
+      "sku": "JEEP-17-24",
+      "tier": "OEM",
+      "price": 60.0,
+      "sale_price": null,
+      "image": "images/jeep-keys-2017-2024.png",
+      "description": "Jeep smart key 2017-2024. RF 433 MHz, push start, mechanical backup key included. OEM quality.",
+      "stock": "in-stock",
+      "tags": [
+        "Jeep",
+        "smart key",
+        "OEM",
+        "433MHz"
+      ]
+    },
+    {
+      "id": "kia-2017-2024-oem",
+      "name": "KIA Smart Key 2017-2024",
+      "brand": "KIA",
+      "type": "Smart Keys",
+      "fcc_id": "SY5XNFN04",
+      "sku": "KIA-17-24",
+      "tier": "OEM",
+      "price": 60.0,
+      "sale_price": null,
+      "image": "images/kia-keys-2017-2024.png",
+      "description": "KIA smart key 2017-2024. RF 433 MHz, chip ID47, blade keyway DA34, push start. OEM quality.",
+      "stock": "in-stock",
+      "tags": [
+        "KIA",
+        "smart key",
+        "OEM",
+        "433MHz",
+        "DA34"
+      ]
+    },
+    {
+      "id": "lexus-2017-2024-oem",
+      "name": "Lexus Smart Key 2017-2024",
+      "brand": "Lexus",
+      "type": "Smart Keys",
+      "fcc_id": "HYQ14FBA",
+      "sku": "LEX-17-24",
+      "tier": "OEM",
+      "price": 80.0,
+      "sale_price": null,
+      "image": "images/lexus-keys-2017-2024.png",
+      "description": "Lexus smart key 2017-2024. RF 315 MHz, chip H 8A, blade keyway TOY48, push start, mechanical backup key included. OEM quality.",
+      "stock": "in-stock",
+      "tags": [
+        "Lexus",
+        "smart key",
+        "OEM",
+        "315MHz",
+        "TOY48",
+        "H8A"
+      ]
+    },
+    {
+      "id": "mazda-2017-2024-oem",
+      "name": "Mazda Smart Key 2017-2024",
+      "brand": "Mazda",
+      "type": "Smart Keys",
+      "fcc_id": "WAZSKE13D01",
+      "sku": "MAZ-17-24",
+      "tier": "OEM",
+      "price": 60.0,
+      "sale_price": null,
+      "image": "images/mazda-keys-2017-2024.png",
+      "description": "Mazda smart key 2017-2024. RF 315 MHz, chip ID49, blade keyway MAZ24, push start. OEM quality.",
+      "stock": "in-stock",
+      "tags": [
+        "Mazda",
+        "smart key",
+        "OEM",
+        "315MHz",
+        "MAZ24"
+      ]
+    },
+    {
+      "id": "mercedes-2017-2024-oem",
+      "name": "Mercedes-Benz Smart Key 2017-2024",
+      "brand": "Mercedes",
+      "type": "Smart Keys",
+      "fcc_id": "IYZDC11",
+      "sku": "MB-17-24",
+      "tier": "OEM",
+      "price": 60.0,
+      "sale_price": null,
+      "image": "images/mercedes-keys-2017-2024.png",
+      "description": "Mercedes-Benz smart key 2017-2024. RF 433 MHz, push start, mechanical backup key included. OEM quality.",
+      "stock": "in-stock",
+      "tags": [
+        "Mercedes",
+        "Mercedes-Benz",
+        "smart key",
+        "OEM",
+        "433MHz"
+      ]
+    },
+    {
+      "id": "mitsubishi-2017-2024-oem",
+      "name": "Mitsubishi Smart Key 2017-2024",
+      "brand": "Mitsubishi",
+      "type": "Smart Keys",
+      "fcc_id": "OUC644M-KEY",
+      "sku": "MIT-17-24",
+      "tier": "OEM",
+      "price": 60.0,
+      "sale_price": null,
+      "image": "images/mitsubishi-keys-2017-2024.png",
+      "description": "Mitsubishi smart key 2017-2024. RF 433 MHz, push start, mechanical backup key included. OEM quality.",
+      "stock": "in-stock",
+      "tags": [
+        "Mitsubishi",
+        "smart key",
+        "OEM",
+        "433MHz"
+      ]
+    },
+    {
+      "id": "nissan-2017-2024-oem",
+      "name": "Nissan Smart Key 2017-2024",
+      "brand": "Nissan",
+      "type": "Smart Keys",
+      "fcc_id": "KR5S180144014",
+      "sku": "NIS-17-24",
+      "tier": "OEM",
+      "price": 60.0,
+      "sale_price": null,
+      "image": "images/nissan-keys-2017-2024.png",
+      "description": "Nissan smart key 2017-2024. RF 315 MHz, chip ID47, push start. OEM quality. WARNING: 2010-2017 Nissan BCM lockup risk — check BCM part number before programming.",
+      "stock": "in-stock",
+      "tags": [
+        "Nissan",
+        "smart key",
+        "OEM",
+        "315MHz"
+      ]
+    },
+    {
+      "id": "subaru-2017-2024-oem",
+      "name": "Subaru Smart Key 2017-2024",
+      "brand": "Subaru",
+      "type": "Smart Keys",
+      "fcc_id": "HYQ14AHC",
+      "sku": "SUB-17-24",
+      "tier": "OEM",
+      "price": 60.0,
+      "sale_price": null,
+      "image": "images/subaru-keys-2017-2024.png",
+      "description": "Subaru smart key 2017-2024. RF 433 MHz, chip 8A, blade keyway SUB4, push start, mechanical backup key included. OEM quality.",
+      "stock": "in-stock",
+      "tags": [
+        "Subaru",
+        "smart key",
+        "OEM",
+        "433MHz",
+        "SUB4",
+        "8A"
+      ]
+    },
+    {
+      "id": "tesla-2017-2024-oem",
+      "name": "Tesla Smart Key Fob 2017-2024",
+      "brand": "Tesla",
+      "type": "Smart Keys",
+      "fcc_id": "MIFARE DESFire EV1",
+      "sku": "TES-17-24",
+      "tier": "OEM",
+      "price": 100.0,
+      "sale_price": null,
+      "image": "images/tesla-keys-2017-2024.png",
+      "description": "Tesla smart key fob 2017-2024 (Model 3, Y, S, X). NFC-based. Pairs to vehicle via touchscreen — no programming tool needed. OEM quality.",
+      "stock": "in-stock",
+      "tags": [
+        "Tesla",
+        "smart key",
+        "OEM",
+        "NFC",
+        "Model 3",
+        "Model Y"
+      ]
+    },
+    {
+      "id": "toyota-2017-2024-oem",
+      "name": "Toyota Smart Key 2017-2024",
+      "brand": "Toyota",
+      "type": "Smart Keys",
+      "fcc_id": "HYQ14FBA",
+      "sku": "TOY-17-24",
+      "tier": "OEM",
+      "price": 80.0,
+      "sale_price": null,
+      "image": "images/toyota-keys-2017-2024.png",
+      "description": "Toyota smart key 2017-2024. RF 315 MHz, chip H 8A, blade keyway TOY48, push start, mechanical backup key included. OEM quality.",
+      "stock": "in-stock",
+      "tags": [
+        "Toyota",
+        "smart key",
+        "OEM",
+        "315MHz",
+        "TOY48",
+        "H8A"
+      ]
+    },
+    {
+      "id": "vw-2017-2024-oem",
+      "name": "Volkswagen Smart Key 2017-2024",
+      "brand": "Volkswagen",
+      "type": "Smart Keys",
+      "fcc_id": "NBGFS93N",
+      "sku": "VW-17-24",
+      "tier": "OEM",
+      "price": 60.0,
+      "sale_price": null,
+      "image": "images/vw-keys-2017-2024.png",
+      "description": "Volkswagen smart key 2017-2024. RF 433 MHz, MQB chip 1048, blade keyway HU66, push start, mechanical backup key included. OEM quality.",
+      "stock": "in-stock",
+      "tags": [
+        "Volkswagen",
+        "VW",
+        "smart key",
+        "OEM",
+        "433MHz",
+        "MQB",
+        "HU66"
+      ]
     }
-
   ]
 }
