@@ -524,28 +524,6 @@
       ]
     },
     {
-      "id": "bmw-2017-2024-oem",
-      "name": "BMW Smart Key 2017-2024",
-      "brand": "BMW",
-      "type": "Smart Keys",
-      "fcc_id": "NBGIDGNG1",
-      "sku": "BMW-17-24",
-      "tier": "OEM",
-      "price": CALL,
-      "sale_price": null,
-      "image": "images/bmw-keys-2017-2024.png",
-      "description": "BMW smart key 2017-2024. RF 315 MHz, chip ID49, blade keyway HU100R, push start, mechanical backup key included. OEM quality.",
-      "stock": "in-stock",
-      "tags": [
-        "BMW",
-        "smart key",
-        "OEM",
-        "315MHz",
-        "ID49",
-        "HU100R"
-      ]
-    },
-    {
       "id": "chrysler-2017-2024-oem",
       "name": "Chrysler Smart Key 2017-2024",
       "brand": "Chrysler",
