@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
+   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-918675153"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -9,7 +9,6 @@
     gtag('js', new Date());
     gtag('config', 'AW-918675153');
     
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>6ix Keys – Vaughan Locksmith | Car Keys Vaughan | Condo Fobs</title>
@@ -188,7 +187,18 @@
       0%,100%{opacity:0.08; transform:scaleX(0.8);}
       40%,60%{opacity:0.25; transform:scaleX(1);}
     }
-    .hero-content { position:relative; z-index:2; }
+    .hero-content { position:relative; z-index:2; display:grid; grid-template-columns:1.1fr 0.9fr; gap:60px; align-items:center; }
+    .hero-text { min-width:0; }
+    .hero-image-wrap { position:relative; display:flex; justify-content:center; align-items:center; }
+    .hero-image-wrap img {
+      width:100%; max-width:520px; height:auto; border-radius:16px;
+      border:1px solid rgba(0,212,255,0.25);
+      box-shadow:0 0 50px rgba(0,212,255,0.2), 0 20px 60px rgba(0,0,0,0.5);
+    }
+    .hero-image-wrap::after {
+      content:''; position:absolute; inset:-20px; z-index:-1;
+      background:radial-gradient(ellipse at center, rgba(0,212,255,0.15) 0%, transparent 70%);
+    }
     .hero-badge {
       display:inline-flex; align-items:center; gap:10px;
       background: rgba(0,212,255,0.08);
@@ -845,6 +855,9 @@
     @media(max-width:900px){
       nav{padding:12px 20px;} .nav-links{display:none;}
       .hero{padding:120px 24px 80px;}
+      .hero-content{grid-template-columns:1fr;gap:40px;}
+      .hero-image-wrap{order:-1;}
+      .hero-image-wrap img{max-width:380px;}
       .pain-section,.blaze-feature{grid-template-columns:1fr;padding:70px 24px;}
       .blaze-feature.reverse{direction:ltr;}
       .photo-strip{grid-template-columns:1fr;}
@@ -893,6 +906,7 @@
   <div class="hero-bg-grid"></div>
   <div class="hero-bg-glow"></div>
   <div class="hero-content">
+   <div class="hero-text">
     <div class="hero-badge fade-up">🔐 Vaughan's Mobile Locksmith — GTA Wide</div>
     <h1 class="fade-up">
       WE LOCK<br>
@@ -925,6 +939,10 @@
         <span class="hero-stat-label">Days A Week</span>
       </div>
     </div>
+   </div>
+   <div class="hero-image-wrap fade-up">
+     <img src="images/bybestone.png" alt="6ix Keys — Mobile Automotive Locksmith Vaughan">
+   </div>
   </div>
 </section>
 
