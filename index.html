@@ -872,6 +872,9 @@
       .trust-bar{padding:14px 20px;gap:16px;}
       .price-cards-grid{grid-template-columns:1fr;}
     }
+    .hero-image-wrap img.hero-flyer { max-width:520px; aspect-ratio:1/1; object-fit:contain; display:block; margin:0 auto; }
+    @media(max-width:900px){ .hero-image-wrap img.hero-flyer{max-width:min(100%,460px);} }
+
     /* ===== CURRENT PROMO ===== */
     .promo-section { padding:90px 64px; text-align:center; }
     .promo-section .section-sub { margin:0 auto; }
@@ -950,7 +953,7 @@
     </div>
    </div>
    <div class="hero-image-wrap fade-up">
-     <img src="images/bybestone.webp" width="1942" height="809" fetchpriority="high" alt="6ix Keys — Mobile Automotive Locksmith Vaughan">
+     <img class="hero-flyer" src="images/promo-new-keys-120-nissan-gtr.webp" width="1000" height="1000" fetchpriority="high" alt="6ix Keys promo: new car keys starting at $120 — Nissan GT-R, mobile key cutting and programming in Vaughan and the GTA, call or text 289-946-3846">
    </div>
   </div>
 </section>
